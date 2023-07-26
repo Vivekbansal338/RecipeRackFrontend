@@ -62,7 +62,7 @@ export const dishesandfoods = [
   "Donuts",
   "Fajitas",
   "Fries",
-  "ham",
+  "Ham",
   "Hamburger",
   "Hummus",
   "Icecream",
