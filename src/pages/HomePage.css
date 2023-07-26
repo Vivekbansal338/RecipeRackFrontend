@@ -1,0 +1,19 @@
+.home-page {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home-page__two-col {
+  display: flex;
+  gap: 50px;
+}
+
+@media (min-width: 300px) and (max-width: 855px) {
+  .home-page__two-col {
+    flex-direction: column;
+  }
+}

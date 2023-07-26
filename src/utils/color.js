@@ -1,0 +1,45 @@
+export const colors = {
+  CARBS: "#ff6384",
+  PROTEIN: "#36a2eb",
+  FAT: "#ffcd56",
+  SUGAR_added: "#ff9f40",
+  CA: "#4bc0c0",
+  CHOCDF_net: "#9966ff",
+  CHOCDF: "#ff6384",
+  CHOLE: "#4caf50",
+  ENERC_KCAL: "#f36b6b",
+  FAMS: "#9980fa",
+  FAPU: "#f6e58d",
+  FASAT: "#f9ca24",
+  FATRN: "#7bed9f",
+  FIBTG: "#34e7e4",
+  FOLDFE: "#e056fd",
+  FOLFD: "#ff7f50",
+  FOLAC: "#f1c40f",
+  FE: "#ff6b81",
+  MG: "#82ccdd",
+  NIA: "#d1ccc0",
+  P: "#5c4b51",
+  K: "#badc58",
+  PROCNT: "#f9ca24",
+  RIBF: "#7bed9f",
+  NA: "#95afc0",
+  Sugar_alcohol: "#a4b0be",
+  SUGAR: "#f8a5c2",
+  THIA: "#f19066",
+  VITA_RAE: "#be2edd",
+  VITB12: "#686de0",
+  VITB6A: "#eb4d4b",
+  VITC: "#6ab04c",
+  VITD: "#e056fd",
+  TOCPHA: "#95afc0",
+  VITK1: "#686de0",
+  WATER: "#22a6b3",
+  ZN: "#dff9fb",
+};
+
+export default colors;
+
+export function getColorForNutrient(nutrient) {
+  return colors[nutrient.toUpperCase()];
+}

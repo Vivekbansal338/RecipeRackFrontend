@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e836bdd8.css",
+    "main.js": "/static/js/main.d5bbabb9.js",
+    "static/media/stable-diffusion-xl (12).jpeg": "/static/media/stable-diffusion-xl (12).a52c670bd7c4aee77063.jpeg",
+    "static/media/hero3.jpeg": "/static/media/hero3.1dd3f441011fcc290545.jpeg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.e836bdd8.css",
+    "static/js/main.d5bbabb9.js"
+  ]
+}

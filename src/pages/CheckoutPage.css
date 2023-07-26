@@ -1,0 +1,74 @@
+/* CheckoutPage.css */
+
+.checkoutPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.checkout-delivery {
+  flex-basis: 30%;
+}
+
+.checkout-delivery form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-delivery label {
+  margin-bottom: 5px;
+}
+
+.checkout-delivery input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.checkout-payment {
+  flex-basis: 30%;
+}
+
+.checkout-payment form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-payment label {
+  margin-bottom: 5px;
+}
+
+.checkout-payment input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.checkout-confirm {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.checkout-confirm button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition-duration: 0.4s;
+}
+
+.checkout-confirm button:hover {
+  background-color: #3e8e41;
+  color: white;
+}

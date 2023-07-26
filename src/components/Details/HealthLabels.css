@@ -1,0 +1,26 @@
+/* HealthLabels.css */
+
+.health-labels {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.health-labels h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #eaeaea;
+  margin: 0 10px 10px 0;
+  font-size: 14px;
+}

@@ -1,0 +1,17 @@
+.favouritiescontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.favouritiescontainerheader {
+  margin-bottom: 20px;
+}
+
+.favouritiescontainermiddle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}

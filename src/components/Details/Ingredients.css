@@ -1,0 +1,36 @@
+.ingredients-container {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ingredients-title {
+  color: #555;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ingredients-list {
+  margin: 0;
+  padding: 0;
+}
+
+.ingredients-item {
+  line-height: 1.8;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.ingredients-item:hover {
+  transform: scale(1.03);
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,9 @@
+.Filtersidebar {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100%;
+  background-color: var(--sidebar-bg-color1);
+  padding: 20px;
+  box-sizing: border-box;
+}
