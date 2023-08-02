@@ -29,25 +29,22 @@ export function LoginSignupPage() {
   }
 
   useEffect(() => {
-    // login disabled
-    if (
-      !isValidEmail(email) ||
-      !isValidPassword(password) ||
-      username.length < 5
-    ) {
-      setlogindisabled(true);
+    // login enabled
+    if (isValidEmail(email) && isValidPassword(password)) {
+      setlogindisabled(false);
     }
 
-    // signup disabled
+    // signup enabled
     if (
-      !isValidEmail(email) ||
-      !isValidPassword(password) ||
-      confirmPassword !== password ||
-      username.length < 5
+      isValidEmail(email) &&
+      isValidPassword(password) &&
+      confirmPassword === password &&
+      username.length >= 5
     ) {
-      setsignupdisabled(true);
+      setsignupdisabled(false);
     }
   }, [email, username, password, confirmPassword]);
+  console.log("signup disabled", signupdisabled);
 
   const handlelogin = async (event) => {
     event.preventDefault();
@@ -187,8 +184,16 @@ export function LoginSignupPage() {
         )}
         {/* <button type="submit">{isLogin ? "Login" : "Sign Up"}</button> */}
 
-        {isLogin && <button type="submit">Login</button>}
-        {!isLogin && <button type="submit">Sign up</button>}
+        {isLogin && (
+          <button type="submit" disabled={logindisabled}>
+            Login
+          </button>
+        )}
+        {!isLogin && (
+          <button type="submit" disabled={signupdisabled}>
+            Sign up
+          </button>
+        )}
       </form>
       <div className="toggle-login-signup">
         {isLogin ? (
