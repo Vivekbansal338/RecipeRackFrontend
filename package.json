@@ -35,8 +35,8 @@
   },
   "scripts": {
     "start": "set WEBPACK_CONFIG=./webpack.config.js&& react-scripts start --proxy http://localhost:3000 http://api.edamam.com",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
-    "winBuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build && cp vercel.json build/",
+    "winBuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build && copy vercel.json build\\",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
