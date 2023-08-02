@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { createHashHistory } from "history";
 import { AppLayout } from "./AppLayout";
 import { SearchResultPage } from "../pages/SearchResultPage";
 import { HomePage } from "../pages/HomePage";
@@ -34,7 +33,7 @@ function App() {
       <PersistGate loading={null} persistor={persistor}>
         <QueryClientProvider client={queryClient}>
           <ReactQueryDevtools initialIsOpen={false} />
-          <BrowserRouter history={createHashHistory()}>
+          <BrowserRouter>
             <ToastContainer
               position="top-center"
               autoClose={250}
