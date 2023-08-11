@@ -17,6 +17,7 @@ import { MyprofilePage } from "../pages/MyprofilePage";
 import { PageNotFound } from "../pages/PageNotFound";
 import { ToastContainer } from "react-toastify";
 import { MyPurchasesPage } from "../pages/MyPurchasesPage";
+import Support from "../pages/Support";
 import "react-toastify/dist/ReactToastify.css";
 
 const queryClient = new QueryClient({
@@ -63,6 +64,7 @@ function App() {
                 <Route path="/loginsignup" element={<LoginSignupPage />} />
                 <Route path="/myprofile" element={<MyprofilePage />} />
                 <Route path="/mypurchases" element={<MyPurchasesPage />} />
+                <Route path="/support" element={<Support />} />
                 <Route path="*" element={<PageNotFound />} />
               </Route>
             </Routes>

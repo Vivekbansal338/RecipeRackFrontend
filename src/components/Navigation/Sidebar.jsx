@@ -12,12 +12,15 @@ import {
   FaShoppingCart,
   FaThumbsUp,
   FaTwitter,
+  FaLinkedin,
   FaUser,
   FaYoutube,
   FaToggleOn,
   FaToggleOff,
   FaBars,
 } from "react-icons/fa";
+import { SiGeeksforgeeks } from "react-icons/si";
+import { BiLogoGmail, BiPhoneCall } from "react-icons/bi";
 import "./Sidebar.css";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/stable-diffusion-xl (12).jpeg";
@@ -100,28 +103,48 @@ export default function Sidebar({ showSidebar, handleShowSidebar }) {
         <h4>Social Media</h4>
         <ul>
           <li>
-            <NavLink to="/youtube" className="sidebarlink">
-              <FaYoutube />
-              <span>Youtube</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/instagram" className="sidebarlink">
+            <a
+              href="https://instagram.com/vivek_bansal_bansal?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+              className="sidebarlink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram />
               <span>Instagram</span>
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink to="/facebook" className="sidebarlink">
-              <FaFacebook />
-              <span>Facebook</span>
-            </NavLink>
+            <a
+              href="https://www.linkedin.com/in/vivek-bansal-622a8a1b9"
+              className="sidebarlink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+              <span>Linkedin</span>
+            </a>
           </li>
           <li>
-            <NavLink to="/twitter" className="sidebarlink">
-              <FaTwitter />
-              <span>Twitter</span>
-            </NavLink>
+            <a
+              href="mailto:vivekbansal338@gmail.com"
+              className="sidebarlink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BiLogoGmail />
+              <span>Gmail</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://auth.geeksforgeeks.org/user/vivekb379/practice"
+              className="sidebarlink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiGeeksforgeeks />
+              <span>GfG</span>
+            </a>
           </li>
         </ul>
 
